@@ -500,3 +500,38 @@ main { overflow: hidden; }
   }
   .hero-copy-panel { padding-left: 0; }
 }
+
+/* ---- Status badges (Live / In development / Concept) ---- */
+.status {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  border: 1px solid var(--line);
+}
+.status.live { color: #071014; background: var(--cyan); border-color: var(--cyan); }
+.status.dev { color: var(--gold); background: rgba(216,181,109,0.10); border-color: rgba(216,181,109,0.35); }
+
+/* ---- FAQ ---- */
+.faq-list { display: grid; gap: 14px; }
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px 26px;
+  background: var(--panel);
+}
+.faq-item h3 { margin: 0 0 8px; font-size: 21px; letter-spacing: -0.03em; }
+.faq-item p { margin: 0; color: var(--muted); }
+
+/* ---- Essay / article body ---- */
+.essay { max-width: 760px; margin: 0 auto; }
+.essay .dek { font-size: clamp(18px, 2.4vw, 22px); color: var(--muted); margin: 6px 0 14px; }
+.essay .byline { color: var(--muted-2); font-size: 14px; margin: 0 0 36px; }
+.essay h2 { font-size: clamp(24px, 3vw, 32px); letter-spacing: -0.04em; margin: 40px 0 14px; }
+.essay p { color: #cfe6e7; margin: 0 0 18px; }
+.essay .essay-footer { color: var(--muted-2); font-size: 14px; border-top: 1px solid var(--line); margin-top: 44px; padding-top: 20px; }
