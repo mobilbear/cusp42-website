@@ -528,6 +528,82 @@ main { overflow: hidden; }
 .faq-item h3 { margin: 0 0 8px; font-size: 21px; letter-spacing: -0.03em; }
 .faq-item p { margin: 0; color: var(--muted); }
 
+/* ---- Atlas (curated gateway) ---- */
+.nav-links a.nav-atlas {
+  color: var(--gold);
+  border: 1px solid rgba(216,181,109,0.4);
+  background: rgba(216,181,109,0.08);
+  font-weight: 750;
+}
+.nav-links a.nav-atlas:hover,
+.nav-links a.nav-atlas.active {
+  color: #081014;
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.footer-nav {
+  max-width: var(--max);
+  margin: 0 auto 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+.footer-nav a { color: var(--muted); font-size: 14px; }
+.footer-nav a:hover { color: var(--cyan); }
+
+.atlas-updated { color: var(--muted-2); font-size: 14px; margin: 14px 0 0; }
+.atlas-theme { scroll-margin-top: 90px; }
+.atlas-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  padding: 26px;
+  box-shadow: 0 12px 50px rgba(0,0,0,0.12);
+}
+.atlas-card:hover { background: var(--panel-strong); }
+.atlas-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.atlas-card-top .tag {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 750;
+  background: rgba(110,231,249,0.06);
+}
+.atlas-meta { color: var(--muted-2); font-size: 12.5px; letter-spacing: 0.02em; }
+.atlas-card h4 { margin: 0 0 10px; font-size: 21px; letter-spacing: -0.03em; line-height: 1.25; }
+.atlas-card h4 a { color: var(--text); }
+.atlas-card h4 a:hover { color: var(--cyan); }
+.atlas-summary { color: var(--muted); margin: 0 0 16px; }
+.atlas-fields { margin: 0; display: grid; gap: 10px; }
+.atlas-fields dt {
+  color: var(--gold);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+}
+.atlas-fields dd { margin: 2px 0 0; color: var(--muted); font-size: 14.5px; }
+.atlas-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.atlas-tags span {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.045);
+  color: var(--muted-2);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12.5px;
+}
+
 /* ---- Essay / article body ---- */
 .essay { max-width: 760px; margin: 0 auto; }
 .essay .dek { font-size: clamp(18px, 2.4vw, 22px); color: var(--muted); margin: 6px 0 14px; }
@@ -535,3 +611,6 @@ main { overflow: hidden; }
 .essay h2 { font-size: clamp(24px, 3vw, 32px); letter-spacing: -0.04em; margin: 40px 0 14px; }
 .essay p { color: #cfe6e7; margin: 0 0 18px; }
 .essay .essay-footer { color: var(--muted-2); font-size: 14px; border-top: 1px solid var(--line); margin-top: 44px; padding-top: 20px; }
+
+/* MoralWorld nav item */
+.nav-links a.nav-mw { color: #5ac8fa; }

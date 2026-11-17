@@ -1,0 +1,26 @@
+# CUSP42 Labs
+
+> CUSP42 Labs is an independent thought lab on AI risk and the human future: we measure where AI risk stands (CARI), simulate how AI could reshape societies (MoralWorld), and question what it means for humanity.
+
+## Pages
+
+- [Home](https://cusp42.com/): An independent thought lab on AI risk and the human future.
+- [CARI](https://cari.cusp42.com/): The Civilizational AI Risk Index, with daily readings and historical estimates since 2019.
+- [MoralWorld](https://cusp42.com/moralworld.html): The simulation of 178 countries: what it is and how to cite it.
+- [Lab](https://cusp42.com/lab.html): The live tools, the methods, and what we are building next.
+- [Library](https://cusp42.com/library.html): The scenarios, analyses, books and stories we think with.
+- [Atlas](https://cusp42.com/atlas.html): Organisations, datasets and monitors on AI and society, curated.
+- [About](https://cusp42.com/about.html): Why the lab exists, what it does not claim, and its independence.
+- [FAQ](https://cusp42.com/faq.html): Short answers about the lab, CARI and MoralWorld.
+- [Contact](https://cusp42.com/contact.html): How to reach the lab.
+- [Sitemap](https://cusp42.com/sitemap.html): Every page.
+
+## Tools
+
+- [MoralWorld](https://moralworld.cusp42.com): A mechanism-based simulation of how AI reshapes 178 countries, driven by CARI; odds of 28 endings; scenarios, not forecasts.
+- [CARI](https://cari.cusp42.com/): The Civilizational AI Risk Index, 75 anchored questions across six dimensions, with daily readings and historical estimates.
+- [Consensus Room](https://consensus.cusp42.com/app/): Multi-model AI debate in the browser: a web app (your own API keys or free models) and a Chrome extension.
+
+## Contact
+
+- cusp42@gmail.com

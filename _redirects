@@ -1,0 +1,5 @@
+/work.html /lab.html 301
+/ideas.html /library.html 301
+/ideas/* /library.html 301
+/cari https://cari.cusp42.com/ 301
+/cari.html https://cari.cusp42.com/ 301

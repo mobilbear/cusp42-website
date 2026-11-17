@@ -1,6 +1,6 @@
 # CUSP42 Labs static website
 
-A lightweight static website for **CUSP42 Labs**, designed for GitHub Pages hosting.
+A lightweight static website for **CUSP42 Labs**, with production hosting on Cloudflare Pages.
 
 ## Positioning
 
@@ -9,32 +9,32 @@ CUSP42 Labs is an independent AI thinking lab and product studio. It builds tool
 ## Pages
 
 - `index.html` — brand homepage and core positioning
-- `work.html` — current and future projects
+- Live Civilizational AI Risk Index — https://cari.cusp42.com/
+- `moralworld.html` — MoralWorld overview and citation
 - `lab.html` — CUSP42 Thought Lab and methodology roadmap
-- `ideas.html` — writing themes and research thesis
+- `atlas.html` — CUSP42 Atlas: curated gateway for AI, institutional risk, political economy, multi-agent reasoning, and scenario analysis
+- `atlas.json` — machine-readable companion to the Atlas (resource data for agents and tools)
+- `library.html` — research, writing and sources
+- `sitemap.html` — navigation and links to the public tools
+- `faq.html` — frequently asked questions with FAQPage structured data
 - `about.html` — brand meaning, principles, and separation language
 - `contact.html` — email and public channel placeholders
 
-## How to host on GitHub Pages
+### Maintaining the Atlas
 
-1. Create a new GitHub repository, for example `cusp42-site`.
-2. Upload all files in this folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-5. Save.
-6. If using `cusp42.com`, keep the `CNAME` file and configure DNS at the domain registrar:
-   - For apex domain: use GitHub Pages A records.
-   - For `www`: add a CNAME pointing to your GitHub Pages domain.
+The Atlas is designed to be low-maintenance. It favors living sources (research hubs, recurring reports, project homepages, canonical papers) over volatile links. To update it:
 
-## Items to update before public launch
+1. Edit the resource cards in `atlas.html` (each card carries a "Reviewed YYYY-MM" date).
+2. Mirror the change in `atlas.json` and in the ItemList JSON-LD inside `atlas.html`.
+3. Update the "Last updated" line in the Atlas hero and `lastmod` in `sitemap.xml`.
 
-- Replace any remaining placeholder links in `contact.html`.
-- Update `sitemap.xml` if you use a different domain.
-- Keep CUSP42 links separate from personal publication or employer identity unless you intentionally decide to connect them later.
-- If you update the brand visuals, replace `assets/cusp42-hero.jpg`, `assets/cusp42-logo-lockup.png`, and `assets/favicon.png`.
+An occasional review (once or twice a year) is enough; the resource selection is intentionally durable.
+
+## Deploy on Cloudflare Pages
+
+The production branch is `main`. This static site needs no build command. Use the repository root as the output directory when configuring a Pages Git deployment. For Direct Upload, upload a ZIP with `index.html`, `assets/`, `_headers`, and `_redirects` at its root.
+
+Cloudflare Pages uses `_headers` for response headers and `_redirects` for legacy URLs, including `/cari` and `/cari.html`. The homepage reads the latest available score from the CARI site's public daily JSON feed.
 
 ## Brand voice
 
@@ -45,10 +45,11 @@ Calm, credible, builder-oriented, and slightly philosophical. Avoid AI hype lang
 
 This version includes public links to:
 
-- Consensus Room product page: https://mobilbear.github.io/consensus-room-site/
+- Consensus Room web app: https://consensus.cusp42.com/app/
+- Consensus Room product page: https://consensus.cusp42.com/
 - Chrome Web Store install page: https://chromewebstore.google.com/detail/consensus-room-multi-ai-d/emdbnpaicikiaceimoacjlfijgjemebk
 
-They are currently placed on `index.html`, `work.html`, and `contact.html`.
+The web app is linked from `index.html` and `lab.html`.
 
 ## Visual assets
 
